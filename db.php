@@ -29,8 +29,8 @@ if($_SERVER['HTTP_HOST']=="localhost" or $_SERVER['HTTP_HOST']=="192.168.29.126"
 else
 {
 	$servername = "localhost";
-	$username = "u401320649_root";
-	$password = "harihara_medicals";
+	$username = "nutzirwk_naveen";
+	$password = "nutzirwk_naveen";
 	$dbname = "nutzirwk_fishmeat";
 	//$con = mysqli_connect($servername,$username,$password,$dbname) or die(mysql_error());
 	
