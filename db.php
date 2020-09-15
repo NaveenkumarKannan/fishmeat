@@ -11,7 +11,10 @@
 
 // 
 //define('SET_Fake_val',0);
-
+$servername ='';
+$username = '';
+$password = '';
+$dbname = '';
 if($_SERVER['HTTP_HOST']=="localhost" or $_SERVER['HTTP_HOST']=="192.168.29.126")
 {	
    $servername ='localhost';
@@ -19,29 +22,20 @@ if($_SERVER['HTTP_HOST']=="localhost" or $_SERVER['HTTP_HOST']=="192.168.29.126"
    $password = '';
    $dbname = 'fishmeat';
    //$con = mysqli_connect($servername,$username,$password,$dbname) or die(mysql_error());
-
-   //local 
-   DEFINE ('DB_HOST', 'localhost'); //host name depends on server
-	DEFINE ('DB_USER', 'root');
-	DEFINE ('DB_PASSWORD', '');
-	DEFINE ('DB_NAME', 'fishmeat');
 }
 else
 {
 	$servername = "localhost";
-	$username = "nutzirwk_naveen";
-	$password = "nutzirwk_naveen";
-	$dbname = "nutzirwk_fishmeat";
-	//$con = mysqli_connect($servername,$username,$password,$dbname) or die(mysql_error());
-	
-	//local live 
-   DEFINE ('DB_HOST', 'localhost'); //host name depends on server
-	DEFINE ('DB_USER', 'nutzirwk_naveen');
-	DEFINE ('DB_PASSWORD', 'nutzirwk_naveen');
-	DEFINE ('DB_NAME', 'nutzirwk_fishmeat');
+	$username = "fishmeat_fishmea";
+	$password = "fishmeat_fishmeat";
+	$dbname = "fishmeat_fishmeat";
 }
 //$conn = mysqli_connect($servername, $username, $password,$dbname);
 
+DEFINE ('DB_HOST', $servername); //host name depends on server
+DEFINE ('DB_USER', $username);
+DEFINE ('DB_PASSWORD', $password);
+DEFINE ('DB_NAME', $dbname);
 $con = mysqli_connect(DB_HOST,DB_USER,DB_PASSWORD,DB_NAME);
 
 $result_array = array();//"success"=>false,"message"=>"Not Connected. Database Connection Failure");
