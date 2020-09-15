@@ -31,14 +31,14 @@ else
 	$servername = "localhost";
 	$username = "u401320649_root";
 	$password = "harihara_medicals";
-	$dbname = "u401320649_social_grub";
+	$dbname = "nutzirwk_fishmeat";
 	//$con = mysqli_connect($servername,$username,$password,$dbname) or die(mysql_error());
 	
 	//local live 
    DEFINE ('DB_HOST', 'localhost'); //host name depends on server
-	DEFINE ('DB_USER', '');
-	DEFINE ('DB_PASSWORD', '');
-	DEFINE ('DB_NAME', '');
+	DEFINE ('DB_USER', 'nutzirwk_naveen');
+	DEFINE ('DB_PASSWORD', 'nutzirwk_naveen');
+	DEFINE ('DB_NAME', 'nutzirwk_fishmeat');
 }
 //$conn = mysqli_connect($servername, $username, $password,$dbname);
 
