@@ -1,5 +1,5 @@
 <?php 
-ini_set('session.save_path', '/tmp');
+ini_set('session.save_path', 'tmp/');
 session_start();
 require 'db.php';
 if(isset($_SESSION['username']))
@@ -271,7 +271,7 @@ else
                 <footer class="content-footer">
                     <div class="footer">
                         <div class="copyright">
-                            <span>Copyright © 2020 <b class="text-dark">Fish &amp; Meat</b>. All rights reserved.</span>
+                            <span>Copyright ï¿½ 2020 <b class="text-dark">Fish &amp; Meat</b>. All rights reserved.</span>
                            
                         </div>
                     </div>

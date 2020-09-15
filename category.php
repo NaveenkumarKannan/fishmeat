@@ -1,5 +1,5 @@
 <?php 
-ini_set('session.save_path', '/tmp');
+ini_set('session.save_path', 'tmp/');
 session_start();
 require 'db.php';
 if(isset($_SESSION['username']))
